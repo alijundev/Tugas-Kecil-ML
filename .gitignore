@@ -16,6 +16,3 @@ __pycache__/
 # OS files
 .DS_Store
 Thumbs.db
-
-# Backup notebook
-notebooks/Tugas_ML_Project_BACKUP.ipynb

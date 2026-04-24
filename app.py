@@ -4,15 +4,24 @@ import pandas as pd
 import numpy as np
 import json
 
-try:
-    model = joblib.load('models/rf_juara.pkl')
+@st.cache_resource
+def load_model():
+    model = joblib.load('models/model.pkl')
     scaler = joblib.load('models/scaler.pkl')
+    return model, scaler
+
+@st.cache_data
+def load_mbti_info():
+    with open('mbti_data.json', 'r') as f:
+        return json.load(f)
+
+try:
+    model, scaler = load_model()
 except FileNotFoundError:
     st.error("File model (.pkl) tidak ditemukan di folder models/. Jalankan notebook terlebih dahulu untuk mengekspor model.")
     st.stop()
 
-with open('mbti_data.json', 'r') as f:
-    mbti_info = json.load(f)
+mbti_info = load_mbti_info()
 
 st.set_page_config(page_title="Prediktor MBTI", page_icon="🧠", layout="centered")
 st.title("🧠 Prediksi Tipe Kepribadian MBTI")
