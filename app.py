@@ -63,10 +63,31 @@ gender = st.sidebar.selectbox("Jenis Kelamin", ["Perempuan", "Laki-laki"])
 education = st.sidebar.selectbox("Pendidikan", ["SMA / S1 / Sederajat", "Pascasarjana (S2/S3)"])
 
 st.sidebar.header("📊 Skor Psikometri (0.0 - 10.0)")
-introversion = st.sidebar.slider("Introversion Score", 0.0, 10.0, 5.0)
-sensing = st.sidebar.slider("Sensing Score", 0.0, 10.0, 5.0)
-thinking = st.sidebar.slider("Thinking Score", 0.0, 10.0, 5.0)
-judging = st.sidebar.slider("Judging Score", 0.0, 10.0, 5.0)
+
+# Menggunakan format (0: Lawan ↔ 10: Utama) agar arah slider jelas
+introversion = st.sidebar.slider(
+    "Introversion (0: Ekstrovert ↔ 10: Introvert)", 
+    0.0, 10.0, 5.0,
+    help="Skor rendah cenderung Ekstrovert, skor tinggi cenderung Introvert."
+)
+
+sensing = st.sidebar.slider(
+    "Sensing (0: Intuisi ↔ 10: Sensing)", 
+    0.0, 10.0, 5.0,
+    help="Skor rendah cenderung menggunakan Intuisi (N), skor tinggi menggunakan Sensorik (S)."
+)
+
+thinking = st.sidebar.slider(
+    "Thinking (0: Perasaan ↔ 10: Berpikir)", 
+    0.0, 10.0, 5.0,
+    help="Skor rendah cenderung menggunakan Perasaan (Feeling), skor tinggi menggunakan Logika (Thinking)."
+)
+
+judging = st.sidebar.slider(
+    "Judging (0: Spontan ↔ 10: Terencana)", 
+    0.0, 10.0, 5.0,
+    help="Skor rendah cenderung Spontan (Perceiving), skor tinggi cenderung Terencana (Judging)."
+)
 
 st.sidebar.header("🎯 Minat Utama")
 interest = st.sidebar.selectbox("Pilih Minat", ["Sports", "Arts", "Technology", "Others", "Unknown"])
