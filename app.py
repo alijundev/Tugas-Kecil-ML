@@ -3,29 +3,59 @@ import joblib
 import pandas as pd
 import numpy as np
 import json
+import os
+import gdown
+
+# --- CONFIGURASI GOOGLE DRIVE ---
+MODEL_FILE_ID = '14-qD4-i4uRSyO2AlkpVCC2CeRApEHVAk'
+SCALER_FILE_ID = '1QLXwW9ckYbBoFmNYIgoghVRKUOZvB2q7'
 
 @st.cache_resource
 def load_model():
-    model = joblib.load('models/model.pkl')
-    scaler = joblib.load('models/scaler.pkl')
+    # Buat folder models jika belum ada
+    if not os.path.exists('models'):
+        os.makedirs('models')
+    
+    model_path = 'models/model.pkl'
+    scaler_path = 'models/scaler.pkl'
+
+    # Download Model jika belum ada
+    if not os.path.exists(model_path):
+        with st.spinner("Mengunduh model (400MB)... Mohon tunggu, ini hanya dilakukan sekali."):
+            url = f'https://drive.google.com/uc?id={MODEL_FILE_ID}'
+            gdown.download(url, model_path, quiet=False)
+
+    # Download Scaler jika belum ada
+    if not os.path.exists(scaler_path):
+        url = f'https://drive.google.com/uc?id={SCALER_FILE_ID}'
+        gdown.download(url, scaler_path, quiet=False)
+
+    # Load file
+    model = joblib.load(model_path)
+    scaler = joblib.load(scaler_path)
     return model, scaler
 
 @st.cache_data
 def load_mbti_info():
+    # Pastikan file ini ada di repo GitHub kamu karena ukurannya kecil
     with open('mbti_data.json', 'r') as f:
         return json.load(f)
 
+# --- UI STREAMLIT ---
+st.set_page_config(page_title="Prediktor MBTI", page_icon="🧠", layout="centered")
+
+# Load model dan data
 try:
     model, scaler = load_model()
-except FileNotFoundError:
-    st.error("File model (.pkl) tidak ditemukan di folder models/. Jalankan notebook terlebih dahulu untuk mengekspor model.")
+    mbti_info = load_mbti_info()
+except Exception as e:
+    st.error(f"Terjadi kesalahan saat memuat model: {e}")
     st.stop()
 
-mbti_info = load_mbti_info()
-
-st.set_page_config(page_title="Prediktor MBTI", page_icon="🧠", layout="centered")
 st.title("🧠 Prediksi Tipe Kepribadian MBTI")
 st.markdown("Masukkan data profil di sidebar, lalu klik tombol prediksi untuk melihat hasilnya.")
+
+# ... (Sisanya sama dengan code kamu sebelumnya) ...
 
 st.sidebar.header("📝 Profil Responden")
 age = st.sidebar.number_input("Umur", min_value=15, max_value=80, value=22)
