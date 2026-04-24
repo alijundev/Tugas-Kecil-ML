@@ -1,1 +1,21 @@
-./.venv
+# Virtual environment
+.venv/
+
+# Model files (terlalu besar untuk GitHub)
+models/*.pkl
+notebooks/models/*.pkl
+*.pkl
+
+# Python cache
+__pycache__/
+*.pyc
+
+# Jupyter checkpoints
+.ipynb_checkpoints/
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Backup notebook
+notebooks/Tugas_ML_Project_BACKUP.ipynb

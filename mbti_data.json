@@ -1,0 +1,98 @@
+{
+  "INTJ": {
+    "julukan": "The Architect",
+    "deskripsi": "Pemikir strategis dengan rencana untuk segala hal. Mandiri, analitis, dan memiliki standar tinggi. Lebih suka bekerja sendiri dengan ide-ide kompleks.",
+    "kekuatan": "Visioner, logis, percaya diri, pekerja keras",
+    "kelemahan": "Terlalu kritis, perfeksionis, kurang sabar dengan orang lain"
+  },
+  "INTP": {
+    "julukan": "The Logician",
+    "deskripsi": "Penemu inovatif dengan rasa haus akan pengetahuan. Suka menganalisis teori dan mencari pola. Cenderung pendiam tapi sangat aktif secara intelektual.",
+    "kekuatan": "Kreatif, objektif, open-minded, analitis",
+    "kelemahan": "Kurang peka terhadap perasaan orang lain, sering menunda-nunda"
+  },
+  "ENTJ": {
+    "julukan": "The Commander",
+    "deskripsi": "Pemimpin tegas yang tidak takut mengambil kendali. Efisien, energik, dan percaya diri. Pandai mengorganisir orang dan sumber daya untuk mencapai tujuan.",
+    "kekuatan": "Tegas, karismatik, efisien, strategis",
+    "kelemahan": "Dominan, tidak sabar, kurang toleran terhadap ketidakefisienan"
+  },
+  "ENTP": {
+    "julukan": "The Debater",
+    "deskripsi": "Pemikir cerdas yang suka tantangan intelektual. Senang berdebat dan mengeksplorasi ide baru. Cepat bosan dengan rutinitas.",
+    "kekuatan": "Cerdas, cepat tanggap, inovatif, percaya diri",
+    "kelemahan": "Suka berdebat, kurang fokus, tidak suka detail"
+  },
+  "INFJ": {
+    "julukan": "The Advocate",
+    "deskripsi": "Idealis pendiam dengan prinsip kuat. Memiliki visi untuk membantu orang lain. Tipe MBTI paling langka di populasi umum.",
+    "kekuatan": "Penuh empati, idealis, tegas dalam prinsip, kreatif",
+    "kelemahan": "Terlalu perfeksionis, sensitif terhadap kritik, mudah kelelahan"
+  },
+  "INFP": {
+    "julukan": "The Mediator",
+    "deskripsi": "Idealis yang dipandu oleh nilai-nilai pribadi. Kreatif, empatik, dan selalu mencari makna dalam kehidupan. Memiliki imajinasi yang kaya.",
+    "kekuatan": "Empatik, kreatif, setia pada nilai, open-minded",
+    "kelemahan": "Terlalu idealis, sulit mengambil keputusan, menghindari konflik"
+  },
+  "ENFJ": {
+    "julukan": "The Protagonist",
+    "deskripsi": "Pemimpin karismatik yang menginspirasi orang lain. Hangat, peduli, dan pandai memotivasi. Sangat peka terhadap kebutuhan orang di sekitarnya.",
+    "kekuatan": "Karismatik, empatik, terorganisir, diplomatis",
+    "kelemahan": "Terlalu idealis, terlalu berkorban, sensitif terhadap kritik"
+  },
+  "ENFP": {
+    "julukan": "The Campaigner",
+    "deskripsi": "Semangat yang menular dengan kreativitas tinggi. Antusias, imajinatif, dan pandai melihat potensi di sekitarnya. Suka bersosialisasi.",
+    "kekuatan": "Antusias, kreatif, mudah bergaul, optimis",
+    "kelemahan": "Kurang fokus, terlalu emosional, sulit menyelesaikan hal"
+  },
+  "ISTJ": {
+    "julukan": "The Logistician",
+    "deskripsi": "Pribadi yang bertanggung jawab dan dapat diandalkan. Praktis, teratur, dan setia pada komitmen. Menghargai tradisi dan aturan.",
+    "kekuatan": "Bertanggung jawab, teliti, sabar, jujur",
+    "kelemahan": "Kaku, sulit menerima perubahan, kurang ekspresif"
+  },
+  "ISFJ": {
+    "julukan": "The Defender",
+    "deskripsi": "Pelindung yang hangat dan penuh perhatian. Pekerja keras di balik layar, setia, dan selalu siap membantu orang terdekat.",
+    "kekuatan": "Loyal, perhatian, teliti, sabar",
+    "kelemahan": "Terlalu merendah, sulit menolak permintaan, menghindari konflik"
+  },
+  "ESTJ": {
+    "julukan": "The Executive",
+    "deskripsi": "Pengelola yang tegas dan terorganisir. Menghargai ketertiban, aturan, dan tradisi. Pandai mengelola orang dan proyek.",
+    "kekuatan": "Terorganisir, tegas, dapat diandalkan, pekerja keras",
+    "kelemahan": "Keras kepala, kurang fleksibel, terlalu blak-blakan"
+  },
+  "ESFJ": {
+    "julukan": "The Consul",
+    "deskripsi": "Sosok yang peduli dan suka membantu. Sangat menghargai harmoni sosial dan hubungan dengan orang lain. Populer dan mudah bergaul.",
+    "kekuatan": "Peduli, loyal, mudah bergaul, terorganisir",
+    "kelemahan": "Butuh validasi, sensitif terhadap kritik, kurang fleksibel"
+  },
+  "ISTP": {
+    "julukan": "The Virtuoso",
+    "deskripsi": "Pengamat yang tenang dan analitis. Suka memahami cara kerja sesuatu dengan tangan sendiri. Fleksibel dan spontan.",
+    "kekuatan": "Praktis, logis, fleksibel, tenang dalam tekanan",
+    "kelemahan": "Sulit ditebak, kurang peka perasaan, cepat bosan"
+  },
+  "ISFP": {
+    "julukan": "The Adventurer",
+    "deskripsi": "Seniman pendiam yang hidup di saat ini. Peka terhadap keindahan dan estetika. Hangat tapi menjaga ruang pribadinya.",
+    "kekuatan": "Kreatif, peka, hangat, spontan",
+    "kelemahan": "Menghindari konflik, sulit berkomitmen jangka panjang, terlalu sensitif"
+  },
+  "ESTP": {
+    "julukan": "The Entrepreneur",
+    "deskripsi": "Pribadi energik yang suka aksi. Cerdas secara sosial, spontan, dan pandai membaca situasi. Hidup untuk saat ini.",
+    "kekuatan": "Energik, persuasif, berani, adaptif",
+    "kelemahan": "Impulsif, kurang sabar, tidak suka teori"
+  },
+  "ESFP": {
+    "julukan": "The Entertainer",
+    "deskripsi": "Pusat perhatian yang spontan dan menyenangkan. Suka membuat orang lain bahagia. Praktis dan hidup di saat ini.",
+    "kekuatan": "Antusias, ramah, spontan, praktis",
+    "kelemahan": "Mudah bosan, kurang fokus jangka panjang, menghindari konflik"
+  }
+}
